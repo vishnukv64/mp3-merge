@@ -5,6 +5,12 @@ import time
 
 
 def audio_concat(files, op_concat_filname):
+    """Function to merge multiple mp3 files in a folder to a single mp3 file 
+
+    Args:
+        files (list): list of the files to be merged
+        op_concat_filname (str): name of the merged file to be saved
+    """
     filenamesconcat = []
     combined = AudioSegment.empty()
     for filename in files:
